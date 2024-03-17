@@ -135,3 +135,9 @@ But it is important to use it responsibly and ethically. Here are some guideline
 9. Document your scraping process thoroughly for replicability, transparency and accountability.
 
 10. Continuously re-evaluate your scraping program against applicable laws and ethical principles.
+
+# Changes
+
+The scraper now requests to 'https://www.thedp.com/section/sports'. We get the sports top title in the following way:
+We use the 'find()' function to find the first instance of a 'div' element of class 'col-md-8'. Then, we find the firt 'a' element within
+that div and we extract its text if its not None.
