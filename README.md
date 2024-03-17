@@ -139,5 +139,4 @@ But it is important to use it responsibly and ethically. Here are some guideline
 # Changes
 
 The scraper now requests to 'https://www.thedp.com/section/sports'. We get the sports top title in the following way:
-We use the 'find()' function to find the first instance of a 'div' element of class 'col-md-8'. Then, we find the firt 'a' element within
-that div and we extract its text if its not None.
+We use the 'find()' function to find the first instance of a 'div' element of class 'col-md-8'. Then, we find a header 'h3' of class 'standard-link' to make sure we are getting a headline from the sports. Finally, we find the firt 'a' element within that 'h3' and we extract its text if its not None.
